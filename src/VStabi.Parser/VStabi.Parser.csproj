@@ -5,7 +5,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<PackageId>RichardV.VStabi.Parse</PackageId>
+		<PackageId>RichardV.VStabi.Parser</PackageId>
 		<Version>1.0.0.0</Version>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/richardv/VStabi.Parser</RepositoryUrl>
