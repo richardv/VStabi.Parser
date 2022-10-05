@@ -5,10 +5,6 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VStabi.CloudReader", "VStabi.CloudReader\VStabi.CloudReader.csproj", "{FFDD23D7-9C2C-420A-9BCF-7586EF7DF51E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VStabi.Parser", "VStabi.Parser\VStabi.Parser.csproj", "{5EDE09AC-35AC-4110-8258-8B2219493633}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{D40F84F0-008E-4BE3-8324-47B12C366305}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,16 +15,9 @@ Global
 		{FFDD23D7-9C2C-420A-9BCF-7586EF7DF51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFDD23D7-9C2C-420A-9BCF-7586EF7DF51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFDD23D7-9C2C-420A-9BCF-7586EF7DF51E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EDE09AC-35AC-4110-8258-8B2219493633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EDE09AC-35AC-4110-8258-8B2219493633}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EDE09AC-35AC-4110-8258-8B2219493633}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EDE09AC-35AC-4110-8258-8B2219493633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{5EDE09AC-35AC-4110-8258-8B2219493633} = {D40F84F0-008E-4BE3-8324-47B12C366305}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FAB3C09D-89F4-4C10-8A89-0B19EA363E09}
