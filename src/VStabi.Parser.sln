@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VStabi.Parser", "VStabi.Parser\VStabi.Parser.csproj", "{DDBE35C7-97E0-491A-B729-D0F650E2547A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VStabi.Parser.Tests", "VStabi.Parser.Tests\VStabi.Parser.Tests.csproj", "{6F014AFE-FC51-4543-AB68-F8657140B5CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DDBE35C7-97E0-491A-B729-D0F650E2547A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDBE35C7-97E0-491A-B729-D0F650E2547A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDBE35C7-97E0-491A-B729-D0F650E2547A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F014AFE-FC51-4543-AB68-F8657140B5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F014AFE-FC51-4543-AB68-F8657140B5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F014AFE-FC51-4543-AB68-F8657140B5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F014AFE-FC51-4543-AB68-F8657140B5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
