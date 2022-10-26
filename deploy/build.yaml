@@ -6,15 +6,15 @@ trigger:
   paths:
     include:
       - deploy/build.yaml
-      - src/VBar.Setups/*
+      - src/VStabi.Parser/*
 
 variables:
   - name: solution
-    value: "src/VBar.Setups.sln"
+    value: "src/VBar.Parser.sln"
   - name: buildConfiguration
     value: "Release"
   - name: projectPath
-    value: "src/VBar.Setups"
+    value: "src/VStabi.Parser"
 
 pool:
   vmImage: "windows-latest"
