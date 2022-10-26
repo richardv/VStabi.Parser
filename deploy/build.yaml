@@ -1,0 +1,54 @@
+trigger:
+  branches:
+    include:
+      - main
+
+  paths:
+    include:
+      - deploy/build.yaml
+      - src/VBar.Setups/*
+
+variables:
+  - name: solution
+    value: "src/VBar.Setups.sln"
+  - name: buildConfiguration
+    value: "Release"
+  - name: projectPath
+    value: "src/VBar.Setups"
+
+pool:
+  vmImage: "windows-latest"
+    
+steps:
+  - task: NuGetToolInstaller@1
+
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: "$(solution)"
+
+  - task: VSBuild@1
+    inputs:
+      solution: "$(solution)"
+      configuration: "$(buildConfiguration)"
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Run unit tests - $(buildConfiguration)'
+    inputs:
+      command: 'test'
+      arguments: '--no-build --configuration $(buildConfiguration)'
+      publishTestResults: true
+      projects: '**/*.Tests.csproj'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet clean'
+    inputs:
+      command: custom
+      projects: '$(projectPath)'
+      custom: clean
+        
+  - task: CopyFiles@2
+    displayName: "Copy Files to: $(build.artifactstagingdirectory)"
+    inputs:
+      SourceFolder: "$(system.defaultworkingdirectory)"
+      Contents: '**\bin\$(BuildConfiguration)\**'
+      TargetFolder: "$(build.artifactstagingdirectory)"
