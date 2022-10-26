@@ -10,7 +10,7 @@ trigger:
 
 variables:
   - name: solution
-    value: "src/VBar.Parser.sln"
+    value: "src/VStabi.Parser.sln"
   - name: buildConfiguration
     value: "Release"
   - name: projectPath
